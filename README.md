@@ -6,16 +6,16 @@ TODO: описание
 
 #### Сравнение
 
-![Comparison](/home/igor/parprog/matrix_mul/benchmarks/comparison.png)
+![Comparison](benchmarks/comparison.png)
 
 #### Глупое перемножение
 
-![Naive](/home/igor/parprog/matrix_mul/benchmarks/simple_sizes.png)
+![Naive](benchmarks/simple_sizes.png)
 
 #### Умное перемножение
 
-![Fast_sizes](/home/igor/parprog/matrix_mul/benchmarks/fast_sizes.png)
+![Fast_sizes](benchmarks/fast_sizes.png)
 
 #### Зависимость от числа потоков
 
-![Thread_num](/home/igor/parprog/matrix_mul/benchmarks/threads.png)
+![Thread_num](benchmarks/threads.png)

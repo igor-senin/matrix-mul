@@ -31,7 +31,7 @@ uint64_t timed_multiplication(size_t N,
 
 int main() {
 
-  const size_t N = 4096;
+  const size_t N = 512;
 
   float (*A)[N] = calloc(N, sizeof *A);
   float (*B)[N] = calloc(N, sizeof *A);
@@ -41,7 +41,7 @@ int main() {
 
   int fd = open("results.csv", O_CREAT | O_WRONLY);
 
-  for (size_t n = 128; n <= N; n += 128) {
+  for (size_t n = N; n <= N; n += 128) {
     uint64_t time_i = timed_multiplication(n, A, B, C, simple_multiply);
     double time_d = (double)time_i / 1000.0;
     printf("n = %lu;\ttime = %lf\n", n, time_d);

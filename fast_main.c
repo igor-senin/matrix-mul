@@ -35,7 +35,7 @@ uint64_t timed_multiplication(size_t N,
 
 int main() {
 
-  const size_t N = 4096;
+  const size_t N = 512;
 
   float* A = malloc(N*N*sizeof(float));
   float* B = malloc(N*N*sizeof(float));
@@ -49,16 +49,16 @@ int main() {
 
   printf("threads created\n");
 
-  int fd = open("results.csv", O_CREAT | O_WRONLY, 0644);
+  // int fd = open("results.csv", O_CREAT | O_WRONLY, 0644);
 
   uint64_t time_i = timed_multiplication(N, A, B, C);
   double time_d = (double)time_i / 1000.0;
   printf("n = %lu;\ttime = %lf\n", N, time_d);
-  write_to_csv(fd, time_d);
+  // write_to_csv(fd, time_d);
 
   delete_threads(T);
 
-  close(fd);
+  // close(fd);
 
   free(A);
   free(B);

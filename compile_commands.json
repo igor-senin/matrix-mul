@@ -1,0 +1,12 @@
+[
+  {
+    "directory": "/home/igor/parprog/matrix_mul/",
+    "arguments": ["clang", "-Iinclude", "fast_main.c", "src/*"],
+    "file": "fast_main.c",
+  },
+  {
+    "directory": "/home/igor/parprog/matrix_mul/",
+    "arguments": ["clang", "-Iinclude", "simple_main.c", "src/*"],
+    "file": "simple_main.c",
+  },
+]
